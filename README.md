@@ -1,4 +1,4 @@
-🎉 Contatore Interattivo JavaScript 🎉
+## 🎉 Contatore Interattivo JavaScript 🎉
 
 Benvenuto nel mondo del Contatore Interattivo, dove il codice prende vita! 🚀
 
@@ -32,7 +32,7 @@ Reset per riportarlo a zero.
 
 Guarda l'animazione mentre il contatore cambia e un simpatico camminatore si sposta a sinistra e a destra! 🎉
 
-🔨 Come funziona 🧑‍💻
+## 🔨 Come funziona 🧑‍💻
 HTML: Solo il necessario! 🏗️
 
 Il file index.html è vuoto. Sì, hai letto bene. Niente HTML statico! Tutto il contenuto visivo e interattivo viene creato dinamicamente con JavaScript.
