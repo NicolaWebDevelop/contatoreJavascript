@@ -46,3 +46,9 @@ Non usa framework o librerie esterne: funziona ovunque e anche **offline**.
 - **Vanilla JavaScript (ES6+)**
 - **LocalStorage API**
 - **SVG animato** per i personaggi “walkers”
+
+## 👨‍💻 Autore
+
+Realizzato con ❤️ da WebNicolaDesign
+
+© 2025 – Tutti i diritti riservati.
