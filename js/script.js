@@ -6,18 +6,10 @@ window.addEventListener("DOMContentLoaded", () => {
   favicon.setAttribute("href", "https://cdn.pixabay.com/photo/2021/07/25/08/07/add-6491203_1280.png");
   document.head.appendChild(favicon);
 });
-
-// --- BLOCCO ZOOM MOBILE SOLO SU +/- ---
-let lastTap = 0;
-
-function preventDoubleTapZoom(btn) {
-  btn.addEventListener("touchend", (e) => {
-    const now = Date.now();
-    if (now - lastTap < 300) e.preventDefault();
-    lastTap = now;
-  });
-}
-
+const viewport = document.createElement("meta");
+viewport.name = "viewport";
+viewport.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+document.head.appendChild(viewport);
 
 
 // --- COSTRUZIONE DOM ---
@@ -57,11 +49,6 @@ btnInc.id = "increment";
 btnInc.className = "btn";
 btnInc.textContent = "+";
 controls.appendChild(btnInc);
-
-// Attiva blocco zoom mobile SOLO sui pulsanti
-preventDoubleTapZoom(btnInc);
-preventDoubleTapZoom(btnDec);
-
 
 // Memoria
 const memoryRow = document.createElement("div");
