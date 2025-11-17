@@ -1,4 +1,4 @@
-🌟 Contatore Animato in JavaScript (DOM)
+## 🌟 Contatore Animato in JavaScript (DOM)
 
 Un’applicazione web completamente generata tramite JavaScript Vanilla, senza HTML scritto a mano.
 Ogni elemento della pagina viene creato dinamicamente: struttura, stile, interazioni, popup, animazioni, tema e persino la favicon.
