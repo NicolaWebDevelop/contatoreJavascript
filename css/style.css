@@ -7,13 +7,66 @@
   --transition: 200ms ease;
 }
 
+
+[data-theme="dark"] {
+  --text-color: #f0f0f0;
+  --door: rgba(255,255,255,0.2);
+  --card-bg: #1b213a;
+  --btn: rgba(255,255,255,0.06);
+  --btn-border: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.06);
+  --door-back: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); 
+}
+
+/* Modalità giorno */
+[data-theme="light"] {
+  --bg-1: #e9efff;
+  --bg-2: #d4e0ff;
+  --text-color: #000000;
+  --door: #000;
+  --door-back: linear-gradient(to right, rgba(10, 10, 10, 0.062), rgba(43, 43, 43, 0.253));
+  --card-bg: #ffffff;
+  --btn: rgba(211, 211, 211, 0.452);
+  --btn-border: #000000;
+  --border: rgb(0, 0, 0); 
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+  color: var(--text-color);
+  transition: background 0.8s ease, color 0.8s ease;
+}
+
+/* Pulsante tema */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+
+
+
+
 /* GENERALE */
 * { box-sizing: border-box; margin:0; padding:0; }
 html, body {
   height: 100%;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
   background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
-  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +89,9 @@ html, body {
   width: 100%;
 }
 
-h1 { text-align: center; }
+h1 { text-align: center;
+  color: var(--text-color);
+}
 
 /* COUNTER */
 .counter {
@@ -46,7 +101,7 @@ h1 { text-align: center; }
   transition: color var(--transition);
   user-select: none;
 }
-.counter.zero { color: var(--white); }
+.counter.zero { color: var(--text-color); }
 .counter.positive { color: var(--green); }
 .counter.negative { color: var(--red); }
 .counter.increase { color: var(--green) !important; animation: bump 0.3s ease; }
@@ -62,9 +117,9 @@ h1 { text-align: center; }
   flex-wrap: wrap;
 }
 .btn {
-  background: rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.06);
-  color: var(--white);
+  background: var(--btn);
+  border:1px solid var(--btn-border);
+  color: var(--text-color);
   padding: 10px 16px;
   font-size: 18px;
   border-radius: 10px;
@@ -72,28 +127,100 @@ h1 { text-align: center; }
   transition: transform 120ms ease, background var(--transition);
   min-width: 54px;
 }
-.btn:hover { transform: translateY(-3px); background: rgba(255,255,255,0.09); }
-.btn:active { transform: translateY(-1px) scale(0.995); }
+.btn:hover { 
+  transform: translateY(-3px);
+   background: rgba(255,255,255,0.09); 
+  }
+.btn:active { 
+  transform: translateY(-1px) scale(0.995); 
+}
 
 /* MEMORY */
-.memory-row { display: flex; gap: 10px; align-items: center; justify-content: center; margin-top: 10px; font-size: 14px; opacity: 0.8; }
-.memory-badge { background: rgba(255,255,255,0.08); padding: 4px 10px; border-radius: 8px; min-width: 32px; text-align: center; }
+.memory-row { 
+  display: flex; 
+  gap: 10px; 
+  align-items: center; 
+  justify-content: center; 
+  margin-top: 10px; 
+  font-size: 14px; 
+  opacity: 0.8; 
+}
+.memory-badge { 
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border); 
+  padding: 4px 10px; 
+  border-radius: 8px; 
+  min-width: 32px;
+   text-align: center; 
+  }
 
 /* SCENA E PORTA */
-.ground { position: relative; width: 260px; height: 100px; margin-top: 20px; overflow: hidden; }
-.door { position: absolute; right: 10px; bottom: 0; width: 60px; height: 90px; border: 3px solid rgba(255,255,255,0.2); border-radius: 4px; background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); }
+.ground { 
+  position: relative;
+   width: 260px;
+    height: 100px; 
+    margin-top: 20px; 
+    overflow: hidden; 
+  }
+.door { 
+  position: absolute; 
+  right: 10px; 
+  bottom: 0; 
+  width: 60px;
+   height: 90px; 
+   border: 3px solid var(--door);
+   border-radius: 4px; 
+   background: var(--door-back);
+  }
 
 /* WALKERS */
-.walker { position: absolute; bottom: 0; width: 60px; height: 90px; transition: left 2s linear, opacity 0.4s ease; }
-.shadow { position: absolute; bottom: -5px; left: 50%; width: 30px; height: 8px; background: radial-gradient(ellipse at center, rgba(0,0,0,0.5), transparent 70%); border-radius: 50%; transform: translateX(-50%); opacity: 0.6; }
-@keyframes stepLeft { 0%,100%{transform:rotate(12deg);}50%{transform:rotate(-16deg);} }
-@keyframes stepRight { 0%,100%{transform:rotate(-12deg);}50%{transform:rotate(16deg);} }
+.walker { 
+  position: absolute;
+   bottom: 0; 
+   width: 60px; 
+   height: 90px; 
+   transition: left 2s linear, 
+   opacity 0.4s ease;
+   }
+.shadow { 
+  position: absolute; 
+  bottom: -5px; 
+  left: 50%; 
+  width: 30px; 
+  height: 8px; 
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.5), transparent 70%); 
+  border-radius: 50%; 
+  transform: translateX(-50%); 
+  opacity: 0.6; 
+}
+@keyframes stepLeft { 
+  0%,100%{transform:rotate(12deg);}
+  50%{transform:rotate(-16deg);} 
+}
+@keyframes stepRight {
+   0%,100%{transform:rotate(-12deg);}50%
+   {transform:rotate(16deg);} 
+  }
 
 /* FOOTER */
-footer { text-align: center; margin-top: 30px; font-size: 14px; color: #ddd; }
-footer a { color: #c7c7c7; text-decoration: none; }
-.popup-trigger { color: #c7c7c7; cursor: pointer; text-decoration: none; }
-footer a:hover, .popup-trigger:hover { text-decoration: underline; }
+footer 
+{ text-align: center; 
+  margin-top: 30px; 
+  font-size: 14px; 
+  color: var(--text-color); 
+}
+footer a { 
+  color: var(--text-color); 
+  text-decoration: none; 
+}
+.popup-trigger {
+  color: var(--text-color);
+   cursor: pointer; 
+   text-decoration: none;
+   }
+footer a:hover, .popup-trigger:hover { 
+  text-decoration: underline;
+ }
 
 /* POPUP DIRITTI */
 .popup {
@@ -102,7 +229,7 @@ footer a:hover, .popup-trigger:hover { text-decoration: underline; }
   bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(25, 25, 25, 0.95);
+  background: rgba(25, 25, 25, 1);
   color: #fff;
   padding: 15px 25px;
   border-radius: 12px;
@@ -112,9 +239,21 @@ footer a:hover, .popup-trigger:hover { text-decoration: underline; }
   max-width: 280px;
   z-index: 1000;
 }
-.popup.visible { display: block; }
-.popup-close { position: absolute; top: 5px; right: 8px; cursor: pointer; font-size: 16px; color: #ffb347; transition: transform 0.2s ease; }
-.popup-close:hover { transform: scale(1.2); }
+.popup.visible { 
+  display: block;
+ }
+.popup-close { 
+  position: absolute; 
+  top: 5px;
+   right: 8px; 
+   cursor: pointer; 
+   font-size: 16px; 
+   color: #ff1f1f; 
+   transition: transform 0.2s ease;
+   }
+.popup-close:hover { 
+  transform: scale(1.2); 
+}
 
 /* COOKIE POPUP CON BISCOTTO */
 .cookie-popup {
