@@ -3,8 +3,7 @@ Un contatore moderno, animato e completamente generato via **JavaScript DOM**, c
 Un piccolo progetto creativo per dimostrare la potenza del **vanilla JavaScript** e un pizzico di design raffinato ✨
 
 ## 🚀 Demo
-👉 **[Guarda la demo online](https://nicolawebdevelop.github.io/WebNicolaDesign/)**  
-*(Puoi sostituire il link con la tua GitHub Page o un altro hosting)*
+👉 **[Lanciati sul CONTATORE](https://ubiquitous-conkies-a6bef3.netlify.app/)**
 
 ## 🧠 Descrizione del progetto
 Questo contatore non è un semplice “+1 / -1”:  
@@ -13,7 +12,7 @@ Questo contatore non è un semplice “+1 / -1”:
 - 🔁 **Reset immediato**
 - 💾 **Memoria automatica (localStorage)** – mantiene il valore dopo il refresh
 - 🚶‍♂️ **Omini animati** che entrano o escono per rappresentare le operazioni
-- 🍪 **Cookie popup** con animazione del biscotto “mangiato”
+- 🍪 **Cookie popup**
 - 💬 **Popup informativo sui diritti d’autore**
 - 💅 **UI moderna e responsive** con transizioni fluide e look elegante
 
@@ -27,7 +26,7 @@ Questo contatore non è un semplice “+1 / -1”:
  ┗ 📄 README.md  
 
 Tutto il DOM è generato dinamicamente da `script.js`.  
-Non usa framework o librerie esterne: funziona ovunque e anche **offline**.  
+Non usa framework o librerie esterne
 
 ## ⚙️ Funzionalità principali
 | Funzione | Descrizione |
@@ -37,7 +36,7 @@ Non usa framework o librerie esterne: funziona ovunque e anche **offline**.
 | 🔁 Reset | Riporta il contatore a zero |
 | 💾 Memoria | Salva e mostra l’ultimo valore in `localStorage` |
 | ❌ Cancella memoria | Elimina la memoria salvata |
-| 🍪 Cookie Popup | Mostra un popup cookie con animazione “mangiato” |
+| 🍪 Cookie Popup | Mostra un popup cookie |
 | ⚖️ Popup diritti | Mostra un messaggio informativo sui diritti d’autore |
 
 ## 🧱 Tecnologie utilizzate
@@ -49,6 +48,6 @@ Non usa framework o librerie esterne: funziona ovunque e anche **offline**.
 
 ## 👨‍💻 Autore
 
-Realizzato con ❤️ da WebNicolaDesign
+Realizzato con ❤️ da WebNicolaDesign.
 
 © 2025 – Tutti i diritti riservati.
