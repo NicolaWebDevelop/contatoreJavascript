@@ -6,10 +6,6 @@ window.addEventListener("DOMContentLoaded", () => {
   favicon.setAttribute("href", "https://cdn.pixabay.com/photo/2021/07/25/08/07/add-6491203_1280.png");
   document.head.appendChild(favicon);
 });
-const viewport = document.createElement("meta");
-viewport.name = "viewport";
-viewport.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
-document.head.appendChild(viewport);
 
 
 // --- COSTRUZIONE DOM ---
@@ -270,3 +266,4 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", currentTheme);
   themeToggle.innerHTML = currentTheme === "dark" ? "🌙" : "☀️";
 });
+
