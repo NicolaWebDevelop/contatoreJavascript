@@ -3,7 +3,7 @@ Un contatore moderno, animato e completamente generato via **JavaScript DOM**, c
 Un piccolo progetto creativo per dimostrare la potenza del **vanilla JavaScript** e un pizzico di design raffinato ✨
 
 ## 🚀 Contatore
-👉 **[Lanciati sul CONTATORE](https://contatorejs.netlify.app/))**
+👉 **[Lanciati sul CONTATORE](https://contatorejs.netlify.app/)**
 
 ## 🧠 Descrizione del progetto
 Questo contatore non è un semplice “+1 / -1”:  
