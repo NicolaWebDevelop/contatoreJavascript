@@ -11,7 +11,7 @@ Questo contatore non è un semplice “+1 / -1”:
 - ✅ **Incremento e decremento animato**
 - 🔁 **Reset immediato**
 - 💾 **Memoria automatica (localStorage)** – mantiene il valore dopo il refresh
-- 🚶‍♂️ **Omini animati** che entrano o escono per rappresentare le operazioni
+- 🚶‍♂️ **Personaggi animati** che entrano o escono per rappresentare le operazioni
 - 🍪 **Cookie popup**
 - 💬 **Popup informativo sui diritti d’autore**
 - 💅 **UI moderna e responsive** con transizioni fluide e look elegante
@@ -31,8 +31,8 @@ Non usa framework o librerie esterne
 ## ⚙️ Funzionalità principali
 | Funzione | Descrizione |
 |-----------|-------------|
-| ➕ Incrementa | Aumenta il contatore e mostra un omino verde che entra |
-| ➖ Decrementa | Diminuisce il contatore e mostra un omino rosso che esce |
+| ➕ Incrementa | Aumenta il contatore e mostra un personaggio verde che entra |
+| ➖ Decrementa | Diminuisce il contatore e mostra un personaggio rosso che esce |
 | 🔁 Reset | Riporta il contatore a zero |
 | 💾 Memoria | Salva e mostra l’ultimo valore in `localStorage` |
 | ❌ Cancella memoria | Elimina la memoria salvata |
@@ -44,7 +44,7 @@ Non usa framework o librerie esterne
 - **CSS3** (variabili, keyframes, flexbox, transizioni)
 - **Vanilla JavaScript (ES6+)**
 - **LocalStorage API**
-- **SVG animato** per i personaggi “walkers”
+- **SVG animato** per i personaggi che camminano
 
 ## 👨‍💻 Autore
 
