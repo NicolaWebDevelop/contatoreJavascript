@@ -48,6 +48,6 @@ Non usa framework o librerie esterne
 
 ## 👨‍💻 Autore
 
-Realizzato con ❤️ da [💻WebNicolaDesign.]((https://nicolawebdevelop.github.io/WebNicolaDesign/)
+Realizzato con ❤️ da [💻WebNicolaDesign.](https://nicolawebdevelop.github.io/WebNicolaDesign/)
 
 © 2025 – Tutti i diritti riservati.
