@@ -30,7 +30,9 @@
   --btn-border: #000000;
   --border: rgb(0, 0, 0); 
 }
-
+html {
+  font-size: 16px;
+}
 body {
   background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
   color: var(--text-color);
@@ -311,3 +313,4 @@ footer a:hover, .popup-trigger:hover {
   transform: scale(0) rotate(20deg);
   opacity: 0;
 }
+
