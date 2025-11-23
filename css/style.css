@@ -32,6 +32,7 @@
 }
 html {
   font-size: 16px;
+  touch-action: manipulation;
 }
 body {
   background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
@@ -308,10 +309,17 @@ footer a:hover, .popup-trigger:hover {
 
 .cookie-popup button:hover { background: #3a8cd4; }
 
-/* ANIMAZIONE MANGIARE BISCOTTO */
-.cookie-popup.eaten .cookie {
-  transform: scale(0) rotate(20deg);
-  opacity: 0;
+/* FIX anti-zoom per mobile */
+.btn,
+.memory-row,
+.memory-badge,
+.cookie-popup,
+.cookie-popup button,
+footer,
+footer a,
+.popup,
+.popup-trigger {
+  font-size: 16px !important;
 }
 
 
