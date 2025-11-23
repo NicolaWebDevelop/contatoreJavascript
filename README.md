@@ -2,8 +2,8 @@
 Un contatore moderno, animato e completamente generato via **JavaScript DOM**, con effetti visivi, animazioni SVG, memoria locale e persino un simpatico popup dei cookie 🍪!  
 Un piccolo progetto creativo per dimostrare la potenza del **vanilla JavaScript** e un pizzico di design raffinato ✨
 
-## 🚀 Demo
-👉 **[Lanciati sul CONTATORE](https://ubiquitous-conkies-a6bef3.netlify.app/)**
+## 🚀 Contatore
+👉 **[Lanciati sul CONTATORE](https://contatorejs.netlify.app/))**
 
 ## 🧠 Descrizione del progetto
 Questo contatore non è un semplice “+1 / -1”:  
