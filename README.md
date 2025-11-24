@@ -45,7 +45,8 @@ Non usa framework o librerie esterne
 - **Vanilla JavaScript (ES6+)**
 - **LocalStorage API**
 - **SVG animato** per i personaggi che camminano
-
+## 📸 Anteprima
+![Portfolio Screenshot](contatoreJavascript/anteprimasito.png)
 ## 👨‍💻 Autore
 
 Realizzato con ❤️ da [💻WebNicolaDesign.](https://webnicoladesign.netlify.app/)
