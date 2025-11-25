@@ -104,7 +104,8 @@ popup.classList.add("popup");
 
 const closeBtn = document.createElement("span");
 closeBtn.classList.add("popup-close");
-closeBtn.textContent = "✖";
+closeBtn.textContent = "❌";
+closeBtn.style.fontSize = "11px";
 
 const popupText = document.createElement("p");
 popupText.textContent =
@@ -139,7 +140,7 @@ function updateMemoryDisplay() {
   memoryBadge.textContent = saved ?? "—";
 }
 
-// Walker SVG
+// Personaggi SVG
 function walkerSVG(color = "#000") {
   return `
     <div class="shadow"></div>
@@ -217,7 +218,7 @@ cookiePopup.className = "cookie-popup";
 // BISCOTTO
 const cookieEmoji = document.createElement("span");
 cookieEmoji.textContent = "🍪";
-cookieEmoji.style.fontSize = "24px";
+cookieEmoji.style.fontSize = "33px";
 cookiePopup.appendChild(cookieEmoji);
 
 // TESTO
@@ -255,15 +256,16 @@ themeToggle.innerHTML = "🌙";
 document.body.appendChild(themeToggle);
 
 // Tema salvato
-let currentTheme = localStorage.getItem("theme") || "light";
+let currentTheme = localStorage.getItem("theme") || "giorno";
 document.documentElement.setAttribute("data-theme", currentTheme);
-themeToggle.innerHTML = currentTheme === "dark" ? "🌙" : "☀️";
+themeToggle.innerHTML = currentTheme === "notte" ? "🌙" : "☀️";
 
 // Toggle tema
 themeToggle.addEventListener("click", () => {
-  currentTheme = currentTheme === "light" ? "dark" : "light";
+  currentTheme = currentTheme === "giorno" ? "notte" : "giorno";
   document.documentElement.setAttribute("data-theme", currentTheme);
   localStorage.setItem("theme", currentTheme);
-  themeToggle.innerHTML = currentTheme === "dark" ? "🌙" : "☀️";
+  themeToggle.innerHTML = currentTheme === "notte" ? "🌙" : "☀️";
 });
+
 
