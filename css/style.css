@@ -7,8 +7,8 @@
   --transition: 200ms ease;
 }
 
-
-[data-theme="dark"] {
+/* Modalità notte */
+[data-theme="notte"] {
   --text-color: #f0f0f0;
   --door: rgba(255,255,255,0.2);
   --card-bg: #1b213a;
@@ -19,7 +19,7 @@
 }
 
 /* Modalità giorno */
-[data-theme="light"] {
+[data-theme="giorno"] {
   --bg-1: #e9efff;
   --bg-2: #d4e0ff;
   --text-color: #000000;
@@ -31,7 +31,6 @@
   --border: rgb(0, 0, 0); 
 }
 html {
-  font-size: 16px;
   touch-action: manipulation;
 }
 body {
@@ -59,10 +58,6 @@ body {
 .theme-toggle:hover {
   transform: rotate(20deg) scale(1.1);
 }
-
-
-
-
 
 /* GENERALE */
 * { box-sizing: border-box; margin:0; padding:0; }
@@ -176,7 +171,7 @@ h1 { text-align: center;
    background: var(--door-back);
   }
 
-/* WALKERS */
+/* Personaggi */
 .walker { 
   position: absolute;
    bottom: 0; 
@@ -258,7 +253,7 @@ footer a:hover, .popup-trigger:hover {
   transform: scale(1.2); 
 }
 
-/* COOKIE POPUP CON BISCOTTO */
+/* COOKIE POPUP BISCOTTO */
 .cookie-popup {
   position: fixed;
   bottom: 20px;
@@ -310,16 +305,12 @@ footer a:hover, .popup-trigger:hover {
 .cookie-popup button:hover { background: #3a8cd4; }
 
 /* FIX anti-zoom per mobile */
-.btn,
-.memory-row,
-.memory-badge,
-.cookie-popup,
-.cookie-popup button,
 footer,
 footer a,
 .popup,
 .popup-trigger {
   font-size: 16px !important;
 }
+
 
 
