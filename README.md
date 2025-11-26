@@ -49,6 +49,6 @@ Non usa framework o librerie esterne
 ![Portfolio Screenshot](https://raw.githubusercontent.com/NicolaWebDevelop/contatoreJavascript/refs/heads/main/anteprima.png)
 ## 👨‍💻 Autore
 
-Realizzato con ❤️ da [WebNicolaDesign.💻](https://webnicoladesign-61074268-4c171.web.app/index.html)
+Realizzato con ❤️ da [WebNicolaDesign.💻](https://nicolawebdevelop.github.io/WebNicolaDesign/)
 
 © 2025 – Tutti i diritti riservati.
