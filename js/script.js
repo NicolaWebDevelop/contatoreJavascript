@@ -81,7 +81,7 @@ const footer = document.createElement("footer");
 const text1 = document.createTextNode("Realizzato con tanto amore ❤️ e un po’ di codice 💻 © 2025 ");
 
 const brandLink = document.createElement("a");
-brandLink.href = "https://webnicoladesign-61074268-4c171.web.app/index.html";
+brandLink.href = "https://nicolawebdevelop.github.io/WebNicolaDesign/";
 brandLink.target = "_blank";
 brandLink.textContent = "WebNicolaDesign";
 
@@ -267,6 +267,7 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", currentTheme);
   themeToggle.innerHTML = currentTheme === "notte" ? "🌙" : "☀️";
 });
+
 
 
 
